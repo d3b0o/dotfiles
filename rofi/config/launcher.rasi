@@ -1,0 +1,134 @@
+/*
+ *
+ * Author  : Aditya Shakya
+ * Mail    : adi1090x@gmail.com
+ * Github  : @adi1090x
+ * Twitter : @adi1090x
+ *
+ */
+
+configuration {
+	font:							"Noto Sans 10";
+    show-icons:                     true;
+	icon-theme: 					"Papirus";
+    display-drun: 					"";
+    drun-display-format:            "{name}";
+    disable-history:                false;
+    fullscreen:                     false;
+	hide-scrollbar: 				true;
+	sidebar-mode: 					false;
+}
+
+/* -- Light -- */
+* {
+    background:                     #0D0E0Eff;
+    background-alt:              	#0D0E0Eff;
+    background-bar:                 #303030ff;
+    foreground:                     #EDEDEDFF;
+    accent:			            	#1A73E9FF;
+    border:		               		#261112ff;
+    selected:               		#262626ff;
+}
+
+/* -- Dark -- */
+/*
+* {
+    background:                     #212121ff;
+    background-alt:              	#00000000;
+    background-bar:                 #000000;
+    foreground:                     #EDEDEDFF;
+    accent:			            	#1A73E9FF;
+    border:		               		#1A73E9FF;
+    selected:               		#262626FF;
+}
+*/
+
+window {
+    transparency:                   "real";
+    background-color:               @background;
+    text-color:                     @foreground;
+	height:							93%;
+	width:							12%;
+    location:                       east;
+    x-offset:                       -10px;
+    y-offset:                       25px;
+    border-radius:                  12px;
+	border-color:					@accent;
+}
+
+prompt {
+    enabled: 						true;
+	padding: 						0.25% 0.75% 0% -0.25%;
+	background-color: 				@selected;
+	text-color: 					@foreground;
+	font:							"FantasqueSansMono Nerd Font 12";
+}
+
+entry {
+    background-color:               @selected;
+    text-color:                     @foreground;
+    placeholder-color:              @foreground;
+    expand:                         true;
+    horizontal-align:               0;
+    placeholder:                    "Search";
+    padding:                        0% 0% 0% 0%;
+    blink:                          true;
+}
+
+inputbar {
+	children: 						[ entry ];
+    background-color:               @selected;
+    text-color:                     @foreground;
+    expand:                         false;
+	border:							0% 0% 0% 0%;
+    border-radius:                  12px;
+	border-color:					@accent;
+    margin:                         0% 0% 0% 0%;
+    padding:                        1.25%;
+}
+
+listview {
+    background-color:               @background-alt;
+    columns:                        1;
+    spacing:                        0%;
+    cycle:                          false;
+    dynamic:                        true;
+    layout:                         vertical;
+}
+
+mainbox {
+    background-color:               @background-alt;
+	border:							0% 0% 0% 0%;
+    border-radius:                  0% 0% 0% 0%;
+	border-color:					@accent;
+    children:                       [ inputbar, listview ];
+    spacing:                       	1.25%;
+    padding:                        1% 0.75% 0% 0.75%;
+}
+
+element {
+    background-color:               @background-alt;
+    text-color:                     #7B7D7Dff;
+    orientation:                    vertical;
+    border-radius:                  0%;
+    padding:                        2.85% 0% 2.85% 0.5%;
+}
+
+element-icon {
+    size:                           1.2em;
+}
+
+element-text {
+    expand:                         true;
+    horizontal-align:               0.5;
+    vertical-align:                 0.5;
+    margin:                         0.5% 0.5% -0.5% 0.5%;
+}
+
+element selected {
+    background-color:               @background;
+    text-color:                     @foreground;
+	border:							0% 0% 0% 0%;
+    border-radius:                  12px;
+    border-color:                  	@border;
+}
