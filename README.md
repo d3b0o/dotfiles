@@ -36,7 +36,7 @@ Follow the instructions in `setup.sh`
 * Bspwm
 * Rofi
 * Python
-* Polyybar
+* Polybar
 * Picom
 * ZSH
 
