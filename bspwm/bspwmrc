@@ -18,7 +18,7 @@ bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 xsetroot -cursor_name left_ptr &
 wmname LG3D &
-feh --bg-scale ~/.wallpapers/s4vitar.png
+feh --bg-scale ~/.wallpapers/wallpaper_s4vitar.png
 ~/.config/polybar/launch.sh
 bspc config focus_follows_pointer true
 bspc config border_width 0
