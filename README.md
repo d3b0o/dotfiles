@@ -1,7 +1,7 @@
 # **Dotfiles**
 Minimal bspwm config
 
-Contact: d3b0o#4173
+Contact-discord: d3b0o#4173
 
 ![alt text](examples/theme.png)
 
