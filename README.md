@@ -49,6 +49,9 @@ Launcher
 Screenchot
 ![alt text](examples/screenshot.png)
 
+Powermenu
+![alt text](examples/powermenu.png)
+
 ***
 ## **Polybar**
 
