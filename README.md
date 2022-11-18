@@ -31,14 +31,6 @@ Follow the instructions in `setup.sh`
 
 <a name="sxhkd">More keybindigs</a>
 
-## **Dependencies**
-(This are all optional but you can install it if you want to replicate my desktop. All will be installed with the setup.sh)
-* Bspwm
-* Rofi
-* Python
-* Polybar
-* Picom
-* ZSH
 
 ***
 ## **Rofi**
