@@ -71,6 +71,9 @@ meson --buildtype=release . build
 ninja -C build
 cd ../
 
+unzip Hack.zip
+sudo mv *.ttf /usr/share/fonts
+
 chmod +x ~/.config/bspwm/bspwmrc ~/.config/bspwm/scripts/bspwm_resize
 chmod +x ~/.config/bin/copyipvpn.sh ~/.config/bin/copyiptarget.sh ~/.config/bin/song.sh ~/.config/bin/ethernet_status.sh ~/.config/bin/target_to_hack.sh
 chmod +x ~/.config/polybar/launch.sh
